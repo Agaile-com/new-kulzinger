@@ -14,7 +14,7 @@ function App() {
   useScrollAnimation();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div id="top" className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
         <Hero />
