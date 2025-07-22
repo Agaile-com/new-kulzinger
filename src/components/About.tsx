@@ -1,5 +1,4 @@
 import React from 'react';
-import { Building } from 'lucide-react';
 import { FULL_COMPANY_NAME } from '../constants';
 
 const About: React.FC = () => {
@@ -15,9 +14,16 @@ const About: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="md:order-2 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <div className="w-full h-80 bg-blue-100 rounded-3xl shadow-xl flex items-center justify-center overflow-hidden relative">
-              <Building className="absolute inset-0 m-auto text-blue-300 opacity-20" style={{ width: '70%', height: '70%' }} />
-              <span className="text-3xl font-bold text-blue-700 absolute">Firmengebäude (Placeholder)</span>
+            <div 
+              className="w-full h-80 bg-blue-100 rounded-3xl shadow-xl flex items-center justify-center overflow-hidden relative"
+              style={{
+                backgroundImage: 'url(/images/top-links.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            >
+              <div className="absolute inset-0 bg-blue-100/20 rounded-3xl"></div>
             </div>
           </div>
           <div className="md:order-1 text-left animate-slide-up" style={{ animationDelay: '0.6s' }}>
