@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Info, Wrench, Home } from 'lucide-react';
+import { Phone, Info, Home } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -33,8 +33,16 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="w-full max-w-md h-64 md:h-80 bg-blue-100 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden relative">
-            <Wrench className="absolute inset-0 m-auto text-blue-300 opacity-20" style={{ width: '70%', height: '70%' }} />
+          <div 
+            className="w-full max-w-md h-64 md:h-80 bg-blue-100 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden relative"
+            style={{
+              backgroundImage: 'url(/images/mo-bel-auf-mass-mannheim-kulzinger.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <div className="absolute inset-0 bg-blue-100/30 rounded-3xl"></div>
             <div className="absolute bottom-4 right-4 bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-blue-50 text-blue-800 font-bold text-lg flex items-center space-x-2 animate-slide-up" style={{ animationDelay: '1s' }}>
               <Home className="w-6 h-6 text-blue-600" />
               <span>Ihr Experte Zuhause</span>

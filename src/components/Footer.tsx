@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, MapPin, Phone, Mail } from 'lucide-react';
+import { Zap, MapPin, Phone, Mail, Facebook } from 'lucide-react';
 import { COMPANY_NAME, FULL_COMPANY_NAME, CONTACT_INFO, NAVIGATION_ITEMS } from '../constants';
 
 const Footer: React.FC = () => {
@@ -61,14 +61,25 @@ const Footer: React.FC = () => {
                 {CONTACT_INFO.email}
               </a>
             </p>
+            <p className="flex items-center justify-center md:justify-start">
+              <Facebook className="w-5 h-5 mr-3 text-gray-500" />
+              <a 
+                href="https://www.facebook.com/kulzinger/?locale=de_DE" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors duration-200"
+              >
+                Facebook
+              </a>
+            </p>
           </address>
         </div>
       </div>
       
       <div className="max-w-7xl mx-auto px-6 mt-8 border-t border-gray-700 pt-8 text-sm text-center">
         <p>
-          <button type="button" className="text-gray-400 hover:text-blue-400 mr-4 bg-transparent border-none cursor-pointer">Impressum</button>
-          <button type="button" className="text-gray-400 hover:text-blue-400 bg-transparent border-none cursor-pointer">Datenschutz</button>
+          <a href="#impressum" className="text-gray-400 hover:text-blue-400 mr-4 transition-colors duration-200">Impressum</a>
+          <a href="#datenschutz" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Datenschutz</a>
         </p>
         <p className="mt-4 text-gray-500">Webdesign: PTH-Webservice (Placeholder)</p>
       </div>

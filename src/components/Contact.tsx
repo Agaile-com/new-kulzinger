@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhoneOutgoing, Send } from 'lucide-react';
+import { PhoneOutgoing, Send, Facebook } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
 
 const Contact: React.FC = () => {
@@ -25,6 +25,14 @@ const Contact: React.FC = () => {
             className="inline-flex items-center px-8 py-4 bg-blue-700 text-white font-bold rounded-full shadow-lg hover:bg-blue-800 transition-all duration-300 transform hover:scale-105"
           >
             <Send className="w-6 h-6 mr-3" /> E-Mail senden
+          </a>
+          <a 
+            href="https://www.facebook.com/kulzinger/?locale=de_DE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 bg-blue-500 text-white font-bold rounded-full shadow-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-105"
+          >
+            <Facebook className="w-6 h-6 mr-3" /> Facebook
           </a>
         </div>
       </div>

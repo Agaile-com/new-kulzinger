@@ -15,8 +15,9 @@ export const CONTACT_INFO: ContactInfo = {
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [
   { label: 'Leistungen', href: '#services' },
-  { label: 'Verkauf', href: '#products' },
   { label: 'Über Uns', href: '#about' },
+  { label: 'Impressum', href: '#impressum' },
+  { label: 'Datenschutz', href: '#datenschutz' },
   { label: 'Kontakt', href: '#contact', primary: true }
 ];
 
